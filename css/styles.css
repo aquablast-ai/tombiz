@@ -355,15 +355,6 @@ main section{ padding:40px 0; border-bottom:1px solid rgba(255,255,255,0.04); }
   box-shadow: 0 0 0 2px rgba(138,99,247,.3) inset, 0 4px 8px rgba(0,0,0,.25);
 }
 
-/* Lite 900 image slider (inline) */
-.image-slider{ position:relative; display:inline-block; }
-.image-slider img{ display:block; max-width:100%; height:auto; }
-.image-slider .next-btn{
-  position:absolute; top:50%; right:10px; transform:translateY(-50%);
-  background: rgba(0,0,0,.5); color:#fff; border:none; font-size:24px; padding:8px 12px; cursor:pointer; border-radius:4px;
-}
-.image-slider .next-btn:hover{ background: rgba(0,0,0,.8); }
-
 /* 9) Modal --------------------------------------------------------------- */
 .modal{
   position:fixed; inset:0; z-index:9999;
@@ -522,7 +513,6 @@ main section{ padding:40px 0; border-bottom:1px solid rgba(255,255,255,0.04); }
 .tech-grid > .glowcard{ grid-column:1 / -1; }
 .glowcard{ padding:2px; border-radius:20px; background-image: linear-gradient(163deg, var(--primary) 0%, var(--accent) 100%); transition: box-shadow .25s, transform .2s; }
 .glowcard__inner{ background:var(--surface-2); border-radius:18px; border:1px solid var(--line); padding:18px; }
-.glowcard:hover{ box-shadow:0 0 30px 2px rgba(0,229,255,.25); transform: translateY(-2px); }
 .compare-title{ text-align:center; font-size:clamp(1.2rem,2vw,1.6rem); margin:6px 0 14px; color:var(--text); }
 
 .tech-grid > .mini-cards{ grid-column:1 / -1; margin-top:14px; }
@@ -587,5 +577,3 @@ main section{ padding:40px 0; border-bottom:1px solid rgba(255,255,255,0.04); }
 @media (prefers-reduced-motion: reduce){
   *{ animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; scroll-behavior:auto !important; }
 }
-
-
